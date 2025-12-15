@@ -1,24 +1,54 @@
-# Codefolio
-An open-source portfolio for devs to showcase their projects, coding skills and perosnal story.
+# Portfolio - Gabriel Macena Ramos
 
-## Quick Start
+Portfólio profissional de desenvolvedor backend construído com [Astro](https://astro.build) usando o template [Codefolio](https://github.com/danielunited/codefolio).
+
+## 🚀 Sobre
+
+Desenvolvedor Back-end em formação com foco em PHP, Node.js e TypeScript. Este portfólio apresenta projetos reais envolvendo APIs, bots e automações.
+
+### Projetos em Destaque
+
+- **Nivalis-AI-Bot** - Aplicação backend em PHP com integração de API de IA
+- **Brazcubas-AI-Bot** - Chatbot Node.js com arquitetura em camadas e RAG
+- **Activity-Forge** - Bot Telegram para geração de atividades educacionais em PDF
+
+## 🛠️ Tecnologias
+
+- PHP
+- JavaScript / TypeScript
+- Node.js / Express
+- APIs REST
+- Telegram Bot API
+- Git & GitHub
+
+## 💻 Desenvolvimento Local
 
 ```bash
-npm create astro@latest -- --template danielunited/codefolio
+# Instalar dependências
+npm install
 
-# Follow the interactive prompts to create the project
+# Rodar servidor de desenvolvimento
+npm run dev
 
-cd <your-project-name>
-npm run dev     # Will start the local development server at http://localhost:4321 by default
-
+# Build para produção
+npm run build
 ```
 
-## Deployment
-The current branch can be fully static built and deployed on any static hosting platform.
+O site estará disponível em `http://localhost:4321`
 
-For deployment methods on various platforms, refer to the [Astro Official Deployment Guide](https://docs.astro.build/en/guides/deploy/).
+## 📦 Deploy
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Este projeto pode ser deployed em qualquer plataforma de hospedagem estática:
 
+- [Vercel](https://vercel.com)
+- [Netlify](https://netlify.com)
+- [GitHub Pages](https://pages.github.com)
 
+## 📫 Contato
+
+- GitHub: [@gabrieldotech](https://github.com/gabrieldotech)
+- Portfolio: [Em breve]
+
+## 📄 Licença
+
+MIT License - Template original por [danielunited/codefolio](https://github.com/danielunited/codefolio)

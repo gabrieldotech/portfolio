@@ -1,0 +1,78 @@
+---
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Nivalis-AI-Bot",
+    desc: [
+      "Aplicação backend em PHP que integra uma API de inteligência artificial para responder perguntas em tempo real",
+      "Implementa requisições HTTP com tratamento de respostas e organização básica em camadas",
+      "Consumo de API externa com lógica backend clara e funcional",
+      "Projeto aplicável a casos reais de interação com IA"
+    ],
+    tech: ["PHP", "API REST", "Integração com IA"],
+    githubUrl: "https://github.com/gabrieldotech/nivalis-ai-bot"
+  },
+  {
+    title: "Brazcubas-AI-Bot",
+    desc: [
+      "Chatbot desenvolvido com Node.js e Express, utilizando arquitetura em camadas (controllers e services)",
+      "Implementa RAG (Retrieval-Augmented Generation) para respostas contextualizadas",
+      "Separação clara de responsabilidades com estrutura pronta para escalar",
+      "Uso prático de inteligência artificial aplicada a contextos educacionais"
+    ],
+    tech: ["Node.js", "Express", "JavaScript", "RAG"],
+    githubUrl: "https://github.com/gabrieldotech/brazcubas-ai-bot"
+  },
+  {
+    title: "Activity-Forge",
+    desc: [
+      "Bot para Telegram que gera atividades educacionais personalizadas automaticamente",
+      "Exporta conteúdos em PDF de forma automática, integrando APIs externas",
+      "Bot funcional em ambiente real com TypeScript aplicado de forma profissional",
+      "Geração dinâmica de documentos educacionais com customização"
+    ],
+    tech: ["TypeScript", "Telegram Bot API", "PDFKit"],
+    githubUrl: "https://github.com/gabrieldotech/activity-forge"
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Projetos Backend | Gabriel Macena Ramos" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="backend-projects" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Voltar</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Projetos Backend</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                        githubUrl={project.githubUrl}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

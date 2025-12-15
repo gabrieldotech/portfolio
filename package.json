@@ -1,7 +1,9 @@
 {
-  "name": "Codefolio",
+  "name": "portfolio-gabriel-macena",
   "type": "module",
   "version": "1.0.0",
+  "description": "Portfolio profissional de Gabriel Macena Ramos - Desenvolvedor Backend",
+  "author": "Gabriel Macena Ramos <gabrieldotech>",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
