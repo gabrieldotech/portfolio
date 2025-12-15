@@ -7,7 +7,7 @@ import Sidebar from "../components/Sidebar.astro";
 <!DOCTYPE html>
 <html
 >
-  <Header title="Gabriel Macena Ramos" />
+  <Header title="Gabriel Ramos" />
   <body>
     <div class="content">
       <Sidebar selectedItem="home" />
@@ -15,15 +15,20 @@ import Sidebar from "../components/Sidebar.astro";
         <div class="container">
           <main class="fold-content-container">
             <div class="fold-content">
-              <h1>Olá, eu sou o Gabriel.<br />Desenvolvedor Back-end.</h1>
+              <h1>Olá, eu sou o Gabriel.<br />Desenvolvedor Web.</h1>
               <p class="lead">
                 Desenvolvedor focado em backend, com projetos reais envolvendo APIs, bots e automações. Experiência prática com PHP, Node.js e TypeScript, integrando serviços externos e aplicando arquitetura organizada para resolver problemas reais.
               </p>
             </div>
-            <a href="https://github.com/gabrieldotech" target="_blank" rel="noopener noreferrer" class="button w-button">GitHub</a>
+            <div class="buttons-container">
+              <a href="https://github.com/gabrieldotech" target="_blank" rel="noopener noreferrer" class="button w-button">GitHub</a>
+              <a href="https://linkedin.com/in/ongabrielramos" target="_blank" rel="noopener noreferrer" class="button w-button">LinkedIn</a>
+              <a href="mailto:gabrieldotech@gmail.com" class="button w-button">Email</a>
+              <a href="/curriculo.pdf" download class="button w-button button-secondary">Currículo</a>
+            </div>
           </main>
           <div class="projects-section">
-            <!-- Backend Projects -->
+            <!-- Projects -->
             <a href="/backend-projects" class="projects-container">
               <div class="single-projects-category">
                 <div class="projects-category-image-container">
@@ -31,7 +36,7 @@ import Sidebar from "../components/Sidebar.astro";
                 </div>
               </div>
               <div class="single-projects-content">
-                <h4>Projetos Backend</h4>
+                <h4>Projetos</h4>
                 <div class="tech-tools-container">
                   <div class="mini-label-white gray-color">Tecnologias &amp; ferramentas</div>
                   <div class="chips-container chips-container-small-width">

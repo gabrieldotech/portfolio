@@ -370,6 +370,21 @@ p {
   box-shadow: 0 2px 4px rgba(8, 8, 8, 0.82);
 }
 
+.buttons-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border-color: #4a4a4a;
+}
+
+.button-secondary:hover {
+  background-color: #1c1c1c;
+}
+
 .fold-content {
   margin-bottom: 48px;
 }

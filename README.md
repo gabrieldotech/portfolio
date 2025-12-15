@@ -1,4 +1,4 @@
-# Portfolio - Gabriel Macena Ramos
+# Portfolio - Gabriel Ramos
 
 Portfólio profissional de desenvolvedor backend construído com [Astro](https://astro.build) usando o template [Codefolio](https://github.com/danielunited/codefolio).
 
