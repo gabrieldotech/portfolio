@@ -100,4 +100,16 @@ try {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .blog-grid {
+      gap: 16px;
+    }
+
+    .blog-error,
+    .blog-empty {
+      padding: 24px 16px;
+      border-radius: 8px;
+    }
+  }
 </style>

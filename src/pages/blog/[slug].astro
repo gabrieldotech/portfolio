@@ -298,9 +298,72 @@ function formatDate(dateStr: string): string {
   }
 
   @media screen and (max-width: 767px) {
+    .blog-post-header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+    }
+
     .blog-post-header h1 {
-      font-size: 32px;
-      line-height: 42px;
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 12px;
+    }
+
+    .blog-post-description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .blog-post-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .blog-post-tags {
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .blog-tag {
+      font-size: 11px;
+      padding: 3px 8px;
+    }
+
+    .blog-post-content {
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    .blog-post-content :global(h2) {
+      font-size: 22px;
+      line-height: 30px;
+      margin-top: 32px;
+    }
+
+    .blog-post-content :global(h3) {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 24px;
+    }
+
+    .blog-post-content :global(pre) {
+      padding: 16px;
+      font-size: 13px;
+      margin: 20px -16px;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
+
+    .blog-post-content :global(blockquote) {
+      padding-left: 16px;
+      margin: 20px 0;
+    }
+
+    .blog-post-content :global(.callout) {
+      padding: 12px;
+      margin: 20px 0;
     }
   }
 </style>
