@@ -4,6 +4,18 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
+    title: "IAM Microservice Node",
+    desc: [
+      "Microsserviço de autenticação e gerenciamento de identidade construído com Fastify e TypeScript",
+      "Implementa JWT com Refresh Token Rotation usando HttpOnly Cookies para máxima segurança",
+      "Clean Architecture com separação clara entre camadas de Domain, Application e Infrastructure",
+      "Documentação OpenAPI/Swagger automatizada e validação type-safe com Zod",
+      "Testes unitários e E2E com Vitest, PostgreSQL com Prisma ORM"
+    ],
+    tech: ["TypeScript", "Fastify", "Prisma", "PostgreSQL", "JWT", "Clean Architecture"],
+    githubUrl: "https://github.com/gabrieldotech/iam-microservice-node"
+  },
+  {
     title: "Nivalis-AI-Bot",
     desc: [
       "Aplicação backend em PHP que integra uma API de inteligência artificial para responder perguntas em tempo real",
